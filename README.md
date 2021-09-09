@@ -1,2 +1,2 @@
-# tribute-pages
-Website that i create for tribute.
+# Tribute Pages
+Website that contains all tribute pages i've created.
