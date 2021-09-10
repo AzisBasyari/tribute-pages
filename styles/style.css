@@ -60,10 +60,12 @@ img[alt]:after {
 
 .carousel{
     padding: 0 20px;
+    
 }
 
 .carousel-item img{
     border-radius: 10px;
+    max-height: 768px !important;
 }
 
 #me{
