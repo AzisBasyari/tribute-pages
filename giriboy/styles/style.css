@@ -33,14 +33,17 @@ nav {
     top: 0;
     left: 0;
     background-color: #222831;
-    width: 100%;
     z-index: 10;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 nav li{
@@ -75,7 +78,7 @@ nav ul li a:hover{
     font-family: Noto Serif KR, serif;
     font-weight: 500;
     font-size: 2vw;
-    margin: 0px;
+    margin: 0;
 }
 
 #img-div{
@@ -88,11 +91,10 @@ nav ul li a:hover{
     max-width: 100%;
     text-align: center;
     border-radius: 10px;
-    display: block;
 }
 
 #img-caption{
-    margin-top: 2px;
+    margin: 2px auto;
     /* color: #eee; */
 }
 
@@ -181,11 +183,16 @@ nav ul li a:hover{
     margin: 20px 0;
 }
 
+.videos iframe{
+    width: 900px;
+    height: 506px;
+}
+
 #footer{
     background-color: #222831;
     text-align: center;
     color: #eee;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     padding: 5px 0;
     margin: 0;
@@ -212,4 +219,80 @@ nav ul li a:hover{
 #me{
     text-align: center;
     font-size: .8rem;
+}
+
+@media (max-width: 768px){
+    nav{
+        justify-content: start;
+    }
+
+    nav ul{
+        padding-left: 20px;
+    }
+
+    nav li{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a:not(#home){
+        display: none;  
+    }
+
+    #main{
+        padding-left: 50px;
+    }
+
+    #tribute-info{
+        width: 700px;
+        padding: 0 20px;
+    }
+
+    #tribute-info li:not(.videos){
+        width: 230px;
+        height: 230px;
+        margin: 5px;
+    }
+
+    .videos iframe{
+        width: 700px;
+    }
+
+    /* #footer{
+        padding: 5px 25px;
+    } */
+    
+    #title{
+        font-size: 4rem;
+    }
+
+    #title-info{
+        font-size: 1.5rem;
+    }
+
+    #img-caption{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    #tribute-info{
+        width: 500px;
+        padding: 0 20px;
+    }
+
+    #tribute-info li:not(.videos){
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+
+    .videos iframe{
+        width: 500px;
+        height: 281px;
+    }
+
+    #footer{
+        padding: 5px 25px;
+    }
 }

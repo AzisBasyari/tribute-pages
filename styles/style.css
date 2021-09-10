@@ -58,6 +58,10 @@ img[alt]:after {
     content: attr(alt);
 }
 
+.carousel{
+    padding: 0 20px;
+}
+
 .carousel-item img{
     border-radius: 10px;
 }
